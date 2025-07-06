@@ -7,5 +7,75 @@
 </head>
 <body>
     <h1>Completar el formulario</h1>
+    <form action="" method="">
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" />
+        </p>
+        <p>
+            <input type="text" name="apellido" placeholder="apellido"/>
+        </p>
+        <p>
+            <label for="pass">Contraseña</label>
+            <input type="password" name="pass" />
+        </p>
+        <label for="sexo">Sexo:</label>
+        <ul>
+            <li>
+                <input type="radio" name="sexo" value="masculino" />
+                <label>Masculino</label>
+            </li>
+            <li>
+                <input type="radio" name="sexo" value="femenino" />
+                <label>Femenino</label>
+            </li>
+            <li>
+                <input type="radio" name="sexo" value="otro" />
+                <label>Otro</label>
+            </li>
+        </ul>
+        <!-- Comentario: ademas coloque la opción "Otro". -->
+         <label>Hobbies</label>
+         <ul>
+            <li>
+                <input type="checkbox" name="hobbies[]" value="basquet" id="basquet"/>
+                <label>Basquet</label>
+            </li>
+            <li>
+                <input type="checkbox" name="hobbies[]" value="musica" id="musica" />
+                <label>Música</label>
+            </li>
+            <li>
+                <input type="checkbox" name="hobbies[]" value="lectura" id="lectura"/>
+                <label>Lectura</label>
+            </li>
+            <li>
+                <input type="checkbox" name="hobbies[]" value="cocinar" id="cocinar"/>
+                <label>Cocinar</label>
+            </li>
+            <li>
+                <input type="checkbox" name="hobbies[]" value="otro" id="otro"/>
+                <label>Otro</label>
+            </li>
+         </ul>
+         <p>
+            <label for="titulo ">Titulo</label>
+            <select name="titulo">
+                <option value="primario">Primario</option>
+                <option value="secundario">Secundario</option>
+                <option value="terciario">Terciario</option>
+                <option value="universitario">Universitario</option>
+            </select>
+            </p>    
+        <p>
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Borrar" />
+        </p>
+            </form>
+
 </body>
 </html>
